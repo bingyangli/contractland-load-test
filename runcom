@@ -1,0 +1,6 @@
+for run in {1..10}
+do
+  nohup locust -f "scripts/testSendTransactions.py" --host="http://test.terrachain.network" --master-host=127.0.0.1 --slave &
+done
+
+

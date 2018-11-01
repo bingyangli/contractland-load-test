@@ -1,0 +1,15 @@
+---
+  - name: Start Locust Workers
+    hosts: workers
+    gather_facts: false
+    remote_user: ec2-user
+    tasks:
+
+      - name: docker compose scale up
+        shell: |
+          cd load-test
+          docker container rm  $(sudo docker ps -aq) --force
+        args:
+          warn: false
+  
+

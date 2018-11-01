@@ -1,0 +1,17 @@
+version: "3"
+services:
+
+  locust-master:
+    build: .
+    volumes:
+      - ./scripts:/scripts
+    network_mode: "host"
+    ports:
+      - "8089:8089"
+
+  locust-worker:
+    build: .
+    command: "--master-host=35.168.20.192"
+    volumes:
+      - ./scripts:/scripts
+    network_mode: "host"

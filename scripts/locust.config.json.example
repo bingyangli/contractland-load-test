@@ -1,0 +1,13 @@
+{
+  "target": "https://test.terrachain.network",
+  "locusts": [],
+  "min_wait": 0,
+  "max_wait": 0,
+  "f":"scripts/testWriteBlock.py",
+  "address":"",
+  "privatekey":"",
+  "redis_host":"",
+  "redis_port":6379,
+  "redis_password":""
+  
+}

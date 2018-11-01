@@ -1,0 +1,7 @@
+aws_access_key   = "AKIAIYWEQ3OCOJZX6OLQ"
+aws_secret_key   = "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"
+aws_region       = "us-east-1"
+aws_ami          = "ami-cfe4b2b0"
+instance_type    = "t2.micro"
+public_key_path  = "/home/bing/.ssh/id_rsa.pub"
+private_key_path = "/home/bing/.ssh/id_rsa"

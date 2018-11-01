@@ -1,0 +1,9 @@
+version: "3"
+services:
+
+  locust-worker:
+    build: .
+    command: "--master-host=34.228.182.37"
+    volumes:
+      - ./scripts:/scripts
+    network_mode: "host"
